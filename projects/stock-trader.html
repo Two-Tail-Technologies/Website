@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stock Trader Bot | Two Tail Technologies</title>
+<meta name="description" content="A machine learning trading strategy, judged honestly against simply buying and holding an index fund.">
+<meta property="og:title" content="Stock Trader Bot | Two Tail Technologies">
+<meta property="og:description" content="A machine learning trading strategy, judged honestly against simply buying and holding an index fund.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0f2e2e">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&display=swap">
+<link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../index.html"><svg viewBox="0 0 34 22" aria-hidden="true" focusable="false"><path d="M1 20 C 8 20, 11 2, 17 2 S 26 20, 33 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/><path d="M1 20 C 4 20, 6 18.5, 7.5 16 L7.5 20 Z" fill="#e8a317"/><path d="M33 20 C 30 20, 28 18.5, 26.5 16 L26.5 20 Z" fill="#e8a317"/></svg><span>Two Tail Technologies</span></a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" class="site-nav" aria-label="Main"><ul><li><a href="../index.html">Home</a></li><li><a href="../index.html#about">About</a></li><li><a href="../projects.html" aria-current="page">Projects</a></li><li><a href="../contact.html">Contact</a></li></ul></nav>
+  </div>
+</header>
+<main id="main">
+<section class="detail-head">
+  <div class="wrap">
+    <p class="crumbs"><a href="../projects.html">All projects</a></p>
+    <span class="status status-idea">Idea</span>
+    <h1 style="margin-top:0.5rem">Stock Trader Bot</h1>
+    <p class="lede">A machine learning trading strategy, judged honestly against simply buying and holding an index fund.</p>
+    <dl class="facts">
+      <div><dt>Status</dt><dd>Idea</dd></div>
+      <div><dt>Started</dt><dd>November 1, 2026</dd></div>
+      
+      <div><dt>Tools</dt><dd>Python, R, Backtesting</dd></div>
+    </dl>
+  </div>
+</section>
+<section class="section-alt">
+  <div class="wrap detail-body">
+    <div>
+      <h2>The question</h2>
+      <p>Can a model built on public data beat buy-and-hold of the S&amp;P 500 on risk-adjusted return, after trading costs, on data it was never trained or tuned on?</p>
+      <h2>Where it stands</h2>
+      <ul><li>The first code is in place: a test that compares free daily price sources before we pick one.</li></ul>
+      <h2>How we're approaching it</h2>
+      <ul><li>Build the backtesting harness first: walk-forward testing, trading costs and slippage, and no peeking at future data.</li><li>Set simple baselines: buy-and-hold, momentum and mean-reversion rules.</li><li>Only then try machine learning models against those baselines.</li><li>Paper trade before any real money.</li></ul>
+      <p><em>A clearly documented null result is a valid outcome.</em></p>
+      <div class="pager"><a href="consulto-bot.html">Previous: Consulto Bot</a><a href="company-profitability.html">Next: Company Profitability</a></div>
+    </div>
+    <aside class="aside">
+      <h2>Why it matters</h2>
+      <ul style="padding-left:1.1rem;margin:0"><li>Most hobby trading results come from flawed backtests. A rigorous backtesting framework and an honest write-up are worth showing even if the strategy does not beat the market.</li></ul>
+    </aside>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p>&copy; 2026 Two Tail Technologies. Mark Scott and Aaron Scott.</p>
+    <p><a href="../projects.html">Projects</a> &nbsp; <a href="../contact.html">Contact</a> &nbsp; <a href="https://github.com/Two-Tail-Technologies">GitHub</a></p>
+  </div>
+</footer>
+<script src="../assets/js/site.js" defer></script>
+</body>
+</html>

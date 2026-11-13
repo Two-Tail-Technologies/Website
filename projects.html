@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projects | Two Tail Technologies</title>
+<meta name="description" content="Machine learning, simulation and forecasting projects by Two Tail Technologies.">
+<meta property="og:title" content="Projects | Two Tail Technologies">
+<meta property="og:description" content="Machine learning, simulation and forecasting projects by Two Tail Technologies.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0f2e2e">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&display=swap">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html"><svg viewBox="0 0 34 22" aria-hidden="true" focusable="false"><path d="M1 20 C 8 20, 11 2, 17 2 S 26 20, 33 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/><path d="M1 20 C 4 20, 6 18.5, 7.5 16 L7.5 20 Z" fill="#e8a317"/><path d="M33 20 C 30 20, 28 18.5, 26.5 16 L26.5 20 Z" fill="#e8a317"/></svg><span>Two Tail Technologies</span></a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" class="site-nav" aria-label="Main"><ul><li><a href="index.html">Home</a></li><li><a href="index.html#about">About</a></li><li><a href="projects.html" aria-current="page">Projects</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+  </div>
+</header>
+<main id="main">
+<section>
+  <div class="wrap">
+    <h1>Projects</h1>
+    <p class="lede">Everything we are building, planning or have set aside. Each card opens a page with the question, the approach and where it stands.</p>
+    <div class="controls">
+      <fieldset class="filter-group"><legend>Show</legend><button type="button" data-filter="all" aria-pressed="true">All</button><button type="button" data-filter="in-progress" aria-pressed="false">In progress</button><button type="button" data-filter="idea" aria-pressed="false">Idea</button><button type="button" data-filter="shelved" aria-pressed="false">Shelved</button></fieldset>
+      <label class="sort"><span class="sort-label">Sort by</span>
+        <select id="sort">
+          <option value="status">Status (active first)</option>
+          <option value="newest">Newest first</option>
+          <option value="name">Name (A to Z)</option>
+        </select>
+      </label>
+    </div>
+    <p id="result-count" class="result-count" aria-live="polite">Showing 8 of 8 projects</p>
+    <ul id="project-grid" class="card-grid">
+<li data-name="howell" data-status="in-progress" data-rank="0" data-started="2026-11-09">
+  <article class="card">
+    <span class="status status-in-progress">In progress</span>
+    <h3 style="margin-top:0.6rem"><a href="projects/howell.html">Howell</a></h3>
+    <p>Our own survival city-builder, inspired by Banished, built so that both people and a trained reinforcement learning agent can play it.</p>
+    <div class="meta"><span class="tag">Python</span><span class="tag">Godot 4</span><span class="tag">Reinforcement learning</span></div>
+  </article>
+</li>
+<li data-name="economic planning bot" data-status="idea" data-rank="1" data-started="2026-11-10">
+  <article class="card">
+    <span class="status status-idea">Idea</span>
+    <h3 style="margin-top:0.6rem"><a href="projects/economic-planning-bot.html">Economic Planning Bot</a></h3>
+    <p>A computational economic planner, built in phases from an input-output model on real US data to a central planner that coordinates smaller supply-chain and forecasting bots.</p>
+    <div class="meta"><span class="tag">Python</span><span class="tag">Linear programming</span><span class="tag">Simulation</span></div>
+  </article>
+</li>
+<li data-name="consulto bot" data-status="idea" data-rank="1" data-started="2026-11-01">
+  <article class="card">
+    <span class="status status-idea">Idea</span>
+    <h3 style="margin-top:0.6rem"><a href="projects/consulto-bot.html">Consulto Bot</a></h3>
+    <p>An AI consultant a company installs for its own staff. It pairs best practices we write for each industry with the company&#x27;s own procedures, goals and metrics.</p>
+    <div class="meta"><span class="tag">Python</span><span class="tag">Large language models</span><span class="tag">Retrieval</span></div>
+  </article>
+</li>
+<li data-name="stock trader bot" data-status="idea" data-rank="1" data-started="2026-11-01">
+  <article class="card">
+    <span class="status status-idea">Idea</span>
+    <h3 style="margin-top:0.6rem"><a href="projects/stock-trader.html">Stock Trader Bot</a></h3>
+    <p>A machine learning trading strategy, judged honestly against simply buying and holding an index fund.</p>
+    <div class="meta"><span class="tag">Python</span><span class="tag">R</span><span class="tag">Backtesting</span></div>
+  </article>
+</li>
+<li data-name="company profitability" data-status="idea" data-rank="1" data-started="2026-11-01">
+  <article class="card">
+    <span class="status status-idea">Idea</span>
+    <h3 style="margin-top:0.6rem"><a href="projects/company-profitability.html">Company Profitability</a></h3>
+    <p>Forecasting a company&#x27;s profitability several quarters ahead from public SEC filings.</p>
+    <div class="meta"><span class="tag">R or Python</span><span class="tag">Panel forecasting</span><span class="tag">SEC filings</span></div>
+  </article>
+</li>
+<li data-name="development likelihood" data-status="idea" data-rank="1" data-started="2026-11-01">
+  <article class="card">
+    <span class="status status-idea">Idea</span>
+    <h3 style="margin-top:0.6rem"><a href="projects/development-likelihood.html">Development Likelihood</a></h3>
+    <p>Predicting which land parcels will be developed within a few years, using public parcel, permit, land-cover and aerial-imagery data.</p>
+    <div class="meta"><span class="tag">Geospatial</span><span class="tag">Gradient boosting</span><span class="tag">Survival models</span></div>
+  </article>
+</li>
+<li data-name="fly connectome" data-status="idea" data-rank="1" data-started="2026-11-01">
+  <article class="card">
+    <span class="status status-idea">Idea</span>
+    <h3 style="margin-top:0.6rem"><a href="projects/fly-connectome.html">Fly Connectome</a></h3>
+    <p>A research project on the fruit fly connectome, the complete wiring diagram of a fly&#x27;s brain.</p>
+    <div class="meta"><span class="tag">Python</span><span class="tag">Network science</span><span class="tag">Neuroscience data</span></div>
+  </article>
+</li>
+<li data-name="eu5 bot" data-status="shelved" data-rank="2" data-started="2026-11-01">
+  <article class="card">
+    <span class="status status-shelved">Shelved</span>
+    <h3 style="margin-top:0.6rem"><a href="projects/eu5-bot.html">EU5 Bot</a></h3>
+    <p>AI tooling for the strategy game Europa Universalis V. Shelved in favor of Howell.</p>
+    <div class="meta"><span class="tag">Python</span><span class="tag">Game analytics</span></div>
+  </article>
+</li>
+    </ul>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p>&copy; 2026 Two Tail Technologies. Mark Scott and Aaron Scott.</p>
+    <p><a href="projects.html">Projects</a> &nbsp; <a href="contact.html">Contact</a> &nbsp; <a href="https://github.com/Two-Tail-Technologies">GitHub</a></p>
+  </div>
+</footer>
+<script src="assets/js/site.js" defer></script>
+</body>
+</html>
