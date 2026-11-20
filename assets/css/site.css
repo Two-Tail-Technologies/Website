@@ -169,10 +169,11 @@ section { padding-block: clamp(3rem, 7vw, 5.5rem); }
 .contact-list { list-style: none; padding: 0; margin: 0; }
 .contact-list li { display: grid; grid-template-columns: 6.5rem 1fr; gap: 0.75rem; padding: 0.7rem 0; border-bottom: 1px solid var(--line); }
 .contact-list li span:first-child { color: var(--muted); }
+.contact-list a { overflow-wrap: anywhere; }
 .needs { background: #fff3cf; border: 1px dashed var(--tail-ink); color: var(--tail-ink); border-radius: var(--radius-sm); padding: 0 0.4rem; font-weight: 700; }
 
 /* Footer */
 .site-footer { background: var(--ink); color: #c7d4cf; padding-block: 2.5rem; font-size: var(--step--1); }
 .site-footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem; }
-.site-footer a { color: var(--sheet); }
+.site-footer a { color: var(--sheet); display: inline-block; padding-block: 0.4rem; }
 .site-footer p { margin: 0; }

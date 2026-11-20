@@ -25,7 +25,8 @@
   // Read initial state from the URL (?sort=newest&status=idea) so views can be shared
   var params = new URLSearchParams(window.location.search);
   if (params.get("sort")) state.sort = params.get("sort");
-  if (params.get("status")) state.filter = params.get("status");
+  var validFilters = filterButtons.map(function (btn) { return btn.dataset.filter; });
+  if (validFilters.indexOf(params.get("status")) !== -1) state.filter = params.get("status");
 
   var sorters = {
     status: function (a, b) {
