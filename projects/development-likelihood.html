@@ -1,69 +1,62 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Development Likelihood | Two Tail Technologies</title>
-<meta name="description" content="Predicting which land parcels will be developed within a few years, using public parcel, permit, land-cover and aerial-imagery data.">
-<meta property="og:title" content="Development Likelihood | Two Tail Technologies">
-<meta property="og:description" content="Predicting which land parcels will be developed within a few years, using public parcel, permit, land-cover and aerial-imagery data.">
-<meta property="og:type" content="website">
-<meta name="theme-color" content="#0f2e2e">
+<meta name="description" content="Can public parcel, permit, land-cover and aerial-imagery data predict which land parcels will be developed within a few years? A Two Tail Technologies project.">
 <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&display=swap">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Two Tail Technologies">
+<meta property="og:title" content="Development Likelihood | Two Tail Technologies">
+<meta property="og:description" content="Can public parcel, permit, land-cover and aerial-imagery data predict which land parcels will be developed within a few years? A Two Tail Technologies project.">
+<meta property="og:image" content="https://two-tail-technologies.github.io/Website/assets/img/tt-social-og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Two Tail Technologies. Built for real decisions. Tested like it matters.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Development Likelihood | Two Tail Technologies">
+<meta name="twitter:description" content="Can public parcel, permit, land-cover and aerial-imagery data predict which land parcels will be developed within a few years? A Two Tail Technologies project.">
+<meta name="twitter:image" content="https://two-tail-technologies.github.io/Website/assets/img/tt-social-og.png">
+<link rel="stylesheet" href="../assets/css/tokens.css">
+<link rel="stylesheet" href="../assets/css/components.css">
 <link rel="stylesheet" href="../assets/css/site.css">
 </head>
-<body>
-<a class="skip" href="#main">Skip to content</a>
-<header class="site-header">
-  <div class="wrap">
-    <a class="brand" href="../index.html"><svg viewBox="0 0 34 22" aria-hidden="true" focusable="false"><path d="M1 20 C 8 20, 11 2, 17 2 S 26 20, 33 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/><path d="M1 20 C 4 20, 6 18.5, 7.5 16 L7.5 20 Z" fill="#e8a317"/><path d="M33 20 C 30 20, 28 18.5, 26.5 16 L26.5 20 Z" fill="#e8a317"/></svg><span>Two Tail Technologies</span></a>
-    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
-    <nav id="site-nav" class="site-nav" aria-label="Main"><ul><li><a href="../index.html">Home</a></li><li><a href="../index.html#about">About</a></li><li><a href="../projects.html" aria-current="page">Projects</a></li><li><a href="../contact.html">Contact</a></li></ul></nav>
+<body class="tt-grid">
+<a class="tt-skip" href="#main">Skip to content</a>
+<header class="tt-header">
+  <div class="tt-header-inner">
+    <a class="tt-header-logo" href="../index.html"><img src="../assets/img/tt-lockup-horizontal-ink.svg" alt="Two Tail Technologies" width="189" height="32"></a>
+    <nav class="tt-nav" aria-label="Main"><a href="../projects.html">Projects</a><a href="../about.html">About</a><a href="../contact.html">Contact</a></nav>
   </div>
 </header>
-<main id="main">
-<section class="detail-head">
-  <div class="wrap">
-    <p class="crumbs"><a href="../projects.html">All projects</a></p>
-    <span class="status status-idea">Idea</span>
-    <h1 style="margin-top:0.5rem">Development Likelihood</h1>
-    <p class="lede">Predicting which land parcels will be developed within a few years, using public parcel, permit, land-cover and aerial-imagery data.</p>
-    <dl class="facts">
-      <div><dt>Status</dt><dd>Idea</dd></div>
-      <div><dt>Started</dt><dd>November 2026</dd></div>
-      
-      <div><dt>Tools</dt><dd>Geospatial, Gradient boosting, Survival models</dd></div>
-    </dl>
+<main id="main" tabindex="-1">
+<div class="wrap wrap-hero page-head">
+  <p class="back-link"><a href="../projects.html">Back to all projects</a></p>
+  <p class="tt-status tt-status-idea page-status"><span aria-hidden="true">○</span> Idea</p>
+  <h1>Development Likelihood</h1>
+  <p class="lede">Can public parcel, permit, land-cover and aerial-imagery data predict which land parcels will be developed within a few years?</p>
+  <p class="tt-tags">geospatial · gradient boosting · survival models</p>
+</div>
+<section class="tt-band" aria-label="Project details">
+  <div class="wrap detail">
+    <h2>The question</h2>
+    <p>For each parcel in a study area, what is the probability it is developed within a set number of years, and does that probability hold up in an area the model never saw?</p>
+    <h2>Where it stands</h2>
+    <p>The project is scoped and will start with a single county. The exact study area, the time horizon and the definition of &ldquo;developed&rdquo; are still to be decided.</p>
+    <h2>How it will be tested</h2>
+    <p>The baseline is a simple distance-and-zoning model. Gradient boosting and a survival (hazard) model have to beat it on whole towns or map blocks held out from training, and the probabilities are checked for calibration.</p>
   </div>
 </section>
-<section class="section-alt">
-  <div class="wrap detail-body">
-    <div>
-      <h2>The question</h2>
-      <p>For each parcel in a study area, what is the probability it is developed within a set number of years, and does that probability hold up in an area the model never saw?</p>
-      <h2>Where it stands</h2>
-      <ul><li>Scoped. The study area, the time horizon and the definition of "developed" are still to be decided.</li></ul>
-      <h2>How we're approaching it</h2>
-      <ul><li>Choose one county to start and one consistent definition of &quot;developed&quot;.</li><li>Build a parcel-by-year dataset of features and later outcomes.</li><li>Baseline: a simple distance-and-zoning model.</li><li>Models: gradient boosting and a survival (hazard) model.</li><li>Test on whole towns or map blocks held out from training, and check that the probabilities are calibrated.</li></ul>
-      
-      <div class="pager"><a href="company-profitability.html">Previous: Company Profitability</a><a href="fly-connectome.html">Next: Fly Connectome</a></div>
-    </div>
-    <aside class="aside">
-      <h2>Why it matters</h2>
-      <ul style="padding-left:1.1rem;margin:0"><li>Developers, land investors, solar siting teams, utilities and planners all need this.</li><li>The hard part is cleaning and joining messy public data, which makes the work hard to copy.</li></ul>
-    </aside>
-  </div>
-</section>
+<div class="wrap">
+  <p class="back-link"><a href="../projects.html">Back to all projects</a></p>
+</div>
 </main>
-<footer class="site-footer">
-  <div class="wrap">
-    <p>&copy; 2026 Two Tail Technologies. Mark Scott and Aaron Scott.</p>
-    <p><a href="../projects.html">Projects</a> &nbsp; <a href="../contact.html">Contact</a> &nbsp; <a href="https://github.com/Two-Tail-Technologies">GitHub</a></p>
+<footer class="tt-footer">
+  <div class="tt-footer-inner">
+    <p>© 2026 Two Tail Technologies</p>
+    <p><a href="https://github.com/Two-Tail-Technologies" aria-label="Two Tail Technologies on GitHub">GitHub</a></p>
   </div>
 </footer>
-<script src="../assets/js/site.js" defer></script>
 </body>
 </html>

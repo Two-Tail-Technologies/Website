@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chartered | Two Tail Technologies</title>
+<meta name="description" content="Can a trained agent, limited to what a human player sees and does, keep a colony alive in games it has never played? A Two Tail Technologies project.">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Two Tail Technologies">
+<meta property="og:title" content="Chartered | Two Tail Technologies">
+<meta property="og:description" content="Can a trained agent, limited to what a human player sees and does, keep a colony alive in games it has never played? A Two Tail Technologies project.">
+<meta property="og:image" content="https://two-tail-technologies.github.io/Website/assets/img/tt-social-og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Two Tail Technologies. Built for real decisions. Tested like it matters.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Chartered | Two Tail Technologies">
+<meta name="twitter:description" content="Can a trained agent, limited to what a human player sees and does, keep a colony alive in games it has never played? A Two Tail Technologies project.">
+<meta name="twitter:image" content="https://two-tail-technologies.github.io/Website/assets/img/tt-social-og.png">
+<link rel="stylesheet" href="../assets/css/tokens.css">
+<link rel="stylesheet" href="../assets/css/components.css">
+<link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body class="tt-grid">
+<a class="tt-skip" href="#main">Skip to content</a>
+<header class="tt-header">
+  <div class="tt-header-inner">
+    <a class="tt-header-logo" href="../index.html"><img src="../assets/img/tt-lockup-horizontal-ink.svg" alt="Two Tail Technologies" width="189" height="32"></a>
+    <nav class="tt-nav" aria-label="Main"><a href="../projects.html">Projects</a><a href="../about.html">About</a><a href="../contact.html">Contact</a></nav>
+  </div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrap wrap-hero page-head">
+  <p class="back-link"><a href="../projects.html">Back to all projects</a></p>
+  <p class="tt-status tt-status-active page-status"><span aria-hidden="true">●</span> In progress</p>
+  <h1>Chartered</h1>
+  <p class="page-meta">Repository: <span class="needs">[NEEDS: Chartered repository URL]</span></p>
+  <p class="lede">Can a trained agent, limited to what a human player sees and does, keep a colony alive in games it has never played? Chartered is our own survival city-builder, inspired by Banished, designed so that people and the agent play exactly the same game.</p>
+  <p class="tt-tags">python · godot 4 · reinforcement learning</p>
+</div>
+<section class="tt-band" aria-label="Project details">
+  <div class="wrap detail">
+    <h2>The question</h2>
+    <p>Can an agent that plays with exactly the same commands and information as a human keep a colony alive, and meet efficiency targets, on random seeds and scenarios it has never seen?</p>
+    <h2>Where it stands</h2>
+    <p>Version 0 was built and tested on November 11, 2026. On 20 seeds it never trained on, the trained agent scored 1,235.4 with every colony surviving. The rule-based bot scored 1,067.4 on the same seeds.</p>
+    <p>Version 0 runs as a Windows program and has been checked on a clean machine. Version 1 is in active development. It replaces population counts with individual villagers, adding households, births and deaths, schooling, harsh winters and accidents. A Godot game window with real-time controls comes next, followed by a screen for watching the agent train.</p>
+    <h2>How it's tested</h2>
+    <p>The game runs as a simulation that needs no screen. The same seed and the same commands always produce the same game, so people, the agent and replays share one engine, and every result can be rerun and checked. A rule-based bot had to keep colonies alive on most seeds before any machine learning began, and the agent has to beat that bot. Scores come from many seeds the agent has never played, never from training rewards, so no single game decides the result. The agent sees only what a human player can see.</p>
+  </div>
+</section>
+<div class="wrap">
+  <p class="back-link"><a href="../projects.html">Back to all projects</a></p>
+</div>
+</main>
+<footer class="tt-footer">
+  <div class="tt-footer-inner">
+    <p>© 2026 Two Tail Technologies</p>
+    <p><a href="https://github.com/Two-Tail-Technologies" aria-label="Two Tail Technologies on GitHub">GitHub</a></p>
+  </div>
+</footer>
+</body>
+</html>

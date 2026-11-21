@@ -8,15 +8,19 @@ Plain HTML, CSS and JavaScript. No build step, no frameworks.
 ## Layout
 
 ```
-index.html            Home and About
-projects.html         Sortable, filterable project grid
-projects/<name>.html  One page per project
-contact.html          Contact details for Mark and Aaron
-404.html              Not-found page
-assets/css/site.css   All styles
-assets/js/site.js     Mobile menu, project sorting and filtering
-assets/img/           Favicon and images
-.nojekyll             Tells GitHub Pages to serve files as-is
+index.html                  Home: headline, method, current work, who we are
+projects.html               Every project as a card, with a status filter
+projects/<name>.html        One page per project
+about.html                  The company, how we work and both founders' profiles
+contact.html                Contact form (sends to Aaron, Mark or both) and links
+404.html                    Not-found page
+assets/css/tokens.css       Colors, fonts and spacing
+assets/css/components.css   Shared pieces: header, footer, buttons, cards, tags
+assets/css/site.css         Page layout
+assets/js/site.js           Status filter on projects.html
+assets/js/contact.js        Contact form (Web3Forms)
+assets/img/                 Logos, favicon and the social preview image
+.nojekyll                   Tells GitHub Pages to serve files as-is
 ```
 
 ## Preview locally
@@ -29,11 +33,20 @@ Any static file server works. From this folder:
 ## Adding a project
 
 1. Copy an existing page in `projects/` and rename it (lowercase, hyphenated).
-2. Edit the title, status, summary and sections.
-3. Add a card for it in `projects.html`. The card's `data-status`, `data-rank`
-   (0 in progress, 1 idea, 2 shelved) and `data-started` (YYYY-MM-DD) attributes drive sorting.
-4. To feature it on the home page, add the same card to the "Current projects" list in `index.html`.
+2. Edit the title, status, summary and sections, plus the description tags in the page head.
+3. Add a card for it in `projects.html`. The card's `data-status` (`progress` or `idea`)
+   drives the filter. Status words are only In progress and Idea.
+4. To feature it on the home page, add the same card to the current work list in `index.html`,
+   and update the project count in the "See all projects" link.
+
+## Contact form
+
+The form sends through Web3Forms, so neither of our email addresses appears on the site.
+Each of us gets a free access key at https://web3forms.com and pastes it into
+`CONTACT_KEYS` in `assets/js/contact.js`. Until both keys are in, the form tells
+visitors it isn't switched on yet and points them to LinkedIn.
 
 ## Publishing
 
 GitHub Pages settings: Source "Deploy from a branch", branch `main`, folder `/ (root)`.
+Pushing to `main` publishes the site within a minute or two.

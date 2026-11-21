@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;600;700&display=swap");
+
+/* Two Tail Technologies: Lab Notebook components (D13). Values from 04-visual-spec-direction-a.md. */
+body { margin: 0; font-family: var(--font-sans); font-size: 17px; line-height: 1.6; color: var(--ink); background: var(--paper); }
+.tt-grid { background-color: var(--paper); background-image: linear-gradient(var(--grid-line) 1px, transparent 1px), linear-gradient(90deg, var(--grid-line) 1px, transparent 1px); background-size: var(--grid-size) var(--grid-size); }
+.tt-pad { padding: var(--page-gutter); }
+.tt-row { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.tt-stack { display: flex; flex-direction: column; gap: 12px; }
+.tt-band { background: var(--sheet); border-block: var(--rule-width) solid var(--rule); }
+
+a { color: var(--ink); }
+a:hover { color: var(--signal); }
+/* Focus: 2px ink outline, 2px offset, on every link and button (D26). Ink on paper 15.16:1. */
+a:focus-visible, button:focus-visible, .tt-btn:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+.tt-footer a:focus-visible { outline-color: var(--paper); }
+/* Motion: none beyond fades of 150ms or less; none at all with reduced motion (D30). */
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition: none !important; animation: none !important; } }
+/* Skip link: hidden until focused (D35). */
+.tt-skip { position: absolute; left: 8px; top: -48px; padding: 8px 12px; background: var(--ink); color: var(--paper); font-family: var(--font-mono); font-size: 14px; z-index: 10; }
+.tt-skip:focus { top: 8px; color: var(--paper); }
+
+.tt-header { background: var(--paper); border-bottom: var(--rule-width) solid var(--rule); }
+.tt-header-inner { max-width: var(--content-max); margin: 0 auto; padding: 18px var(--page-gutter); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; }
+.tt-header-logo { display: flex; align-items: center; text-decoration: none; }
+.tt-header-logo img { display: block; height: 32px; width: auto; }
+.tt-nav { display: flex; flex-wrap: wrap; gap: 4px; font-family: var(--font-mono); font-size: 14px; }
+.tt-nav a { padding: 10px 12px; text-decoration: none; }
+
+.tt-btn { display: inline-block; font-family: var(--font-sans); font-size: 17px; line-height: 1.6; font-weight: 600; text-decoration: none; border-radius: var(--radius-button); cursor: pointer; }
+.tt-btn-primary { padding: var(--button-pad); background: var(--ink); color: var(--paper); border: 0; }
+.tt-btn-primary:hover { color: var(--paper); }
+.tt-btn-secondary { padding: 12px 21px; background: transparent; color: var(--ink); border: var(--rule-width) solid var(--ink); }
+
+.tt-eyebrow { margin: 0 0 8px; font-family: var(--font-mono); font-size: 13px; letter-spacing: 0.08em; color: var(--muted); text-transform: uppercase; }
+
+.tt-status { margin: 0; font-family: var(--font-mono); font-size: 13px; font-weight: 500; text-transform: uppercase; }
+.tt-status-active { color: var(--signal); }
+.tt-status-idea { color: var(--muted); }
+/* Shelved status: approved 2026-11-20 (D31). */
+.tt-status-shelved { color: var(--muted); }
+
+.tt-tags { margin: 6px 0 0; font-family: var(--font-mono); font-size: 12px; color: var(--muted); }
+
+.tt-card { background: var(--sheet); border: var(--rule-width) solid var(--rule); border-radius: var(--radius-card); padding: var(--card-pad); display: flex; flex-direction: column; gap: var(--card-gap); }
+.tt-card h3 { margin: 0; font-size: 22px; }
+.tt-card h3 a { text-decoration: none; }
+.tt-card-summary { margin: 0; color: var(--muted); font-size: 15px; }
+.tt-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(var(--col-min-cards), 1fr)); gap: var(--gap-cards); }
+
+.tt-principles { display: grid; grid-template-columns: repeat(auto-fit, minmax(var(--col-min-principles), 1fr)); gap: var(--gap-principles); }
+.tt-principle-num { margin: 0 0 8px; font-family: var(--font-mono); font-weight: 500; color: var(--signal); }
+.tt-principle h3 { margin: 0 0 6px; font-size: 20px; }
+.tt-principle-desc { margin: 0; color: var(--muted); }
+
+.tt-founders { display: flex; flex-direction: column; gap: 12px; font-family: var(--font-mono); font-size: 14px; }
+.tt-founder { border: var(--rule-width) solid var(--rule); border-radius: var(--radius-card); padding: var(--founder-pad); }
+.tt-founder strong { font-weight: 600; }
+.tt-founder-line { color: var(--muted); }
+
+.tt-footer { background: var(--ink); color: var(--footer-text); font-family: var(--font-mono); font-size: 13px; }
+.tt-footer-inner { max-width: var(--content-max); margin: 0 auto; padding: 32px var(--page-gutter); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; }
+.tt-footer p { margin: 0; }
+.tt-footer a { color: var(--paper); }
+.tt-footer a:hover { color: var(--paper); }
+
+.tt-note { margin: 8px 0 0; font-family: var(--font-mono); font-size: 12px; color: var(--muted); }

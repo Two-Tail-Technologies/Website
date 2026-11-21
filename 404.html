@@ -1,42 +1,59 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+(function () {
+  if (location.protocol === "file:") return;
+  var parts = location.pathname.split("/");
+  var root = location.hostname.slice(-10) === ".github.io" && parts.length > 2 ? "/" + parts[1] + "/" : "/";
+  var b = document.createElement("base");
+  b.href = root;
+  document.head.appendChild(b);
+})();
+</script>
 <title>Page not found | Two Tail Technologies</title>
-<meta name="description" content="Page not found.">
-<meta property="og:title" content="Page not found | Two Tail Technologies">
-<meta property="og:description" content="Page not found.">
+<meta name="description" content="This page does not exist on the Two Tail Technologies site.">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 <meta property="og:type" content="website">
-<meta name="theme-color" content="#0f2e2e">
-<link rel="icon" href="/Website/assets/img/favicon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&display=swap">
-<link rel="stylesheet" href="/Website/assets/css/site.css">
+<meta property="og:site_name" content="Two Tail Technologies">
+<meta property="og:title" content="Page not found | Two Tail Technologies">
+<meta property="og:description" content="This page does not exist on the Two Tail Technologies site.">
+<meta property="og:image" content="https://two-tail-technologies.github.io/Website/assets/img/tt-social-og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Two Tail Technologies. Built for real decisions. Tested like it matters.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Page not found | Two Tail Technologies">
+<meta name="twitter:description" content="This page does not exist on the Two Tail Technologies site.">
+<meta name="twitter:image" content="https://two-tail-technologies.github.io/Website/assets/img/tt-social-og.png">
+<link rel="stylesheet" href="assets/css/tokens.css">
+<link rel="stylesheet" href="assets/css/components.css">
+<link rel="stylesheet" href="assets/css/site.css">
 </head>
-<body>
-<a class="skip" href="#main">Skip to content</a>
-<header class="site-header">
-  <div class="wrap">
-    <a class="brand" href="/Website/index.html"><svg viewBox="0 0 34 22" aria-hidden="true" focusable="false"><path d="M1 20 C 8 20, 11 2, 17 2 S 26 20, 33 20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/><path d="M1 20 C 4 20, 6 18.5, 7.5 16 L7.5 20 Z" fill="#e8a317"/><path d="M33 20 C 30 20, 28 18.5, 26.5 16 L26.5 20 Z" fill="#e8a317"/></svg><span>Two Tail Technologies</span></a>
-    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
-    <nav id="site-nav" class="site-nav" aria-label="Main"><ul><li><a href="/Website/index.html">Home</a></li><li><a href="/Website/index.html#about">About</a></li><li><a href="/Website/projects.html">Projects</a></li><li><a href="/Website/contact.html">Contact</a></li></ul></nav>
+<body class="tt-grid">
+<a class="tt-skip" href="#main">Skip to content</a>
+<header class="tt-header">
+  <div class="tt-header-inner">
+    <a class="tt-header-logo" href="index.html"><img src="assets/img/tt-lockup-horizontal-ink.svg" alt="Two Tail Technologies" width="189" height="32"></a>
+    <nav class="tt-nav" aria-label="Main"><a href="projects.html">Projects</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav>
   </div>
 </header>
-<main id="main">
-<section><div class="wrap">
-  <h1>Page not found</h1>
-  <p class="lede">That address doesn't match a page on this site. It may have moved when we reorganized our projects.</p>
-  <p><a class="btn btn-primary" href="/Website/index.html">Go to the home page</a> &nbsp; <a class="btn btn-ghost" href="/Website/projects.html">Browse projects</a></p>
-</div></section>
+<main id="main" tabindex="-1">
+<section class="wrap wrap-hero prose" aria-labelledby="nf-title">
+  <h1 id="nf-title">Page not found</h1>
+  <p class="lede">There&rsquo;s no page at this address. Try the <a href="index.html">home page</a>, or see every project below.</p>
+  <div class="tt-row">
+    <a class="tt-btn tt-btn-primary" href="projects.html">See the work</a>
+  </div>
+</section>
 </main>
-<footer class="site-footer">
-  <div class="wrap">
-    <p>&copy; 2026 Two Tail Technologies. Mark Scott and Aaron Scott.</p>
-    <p><a href="/Website/projects.html">Projects</a> &nbsp; <a href="/Website/contact.html">Contact</a> &nbsp; <a href="https://github.com/Two-Tail-Technologies">GitHub</a></p>
+<footer class="tt-footer">
+  <div class="tt-footer-inner">
+    <p>© 2026 Two Tail Technologies</p>
+    <p><a href="https://github.com/Two-Tail-Technologies" aria-label="Two Tail Technologies on GitHub">GitHub</a></p>
   </div>
 </footer>
-<script src="/Website/assets/js/site.js" defer></script>
 </body>
 </html>

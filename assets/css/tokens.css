@@ -1,0 +1,43 @@
+/* Two Tail Technologies — tokens, generated from tokens.json (D13, D25). */
+:root {
+  --paper: #F6F5EF;
+  --sheet: #FFFFFF;
+  --ink: #1B1F24;
+  --ink-soft: #3A4048;
+  --muted: #5B616B;
+  --rule: #D9D7CE;
+  --signal: #C2410C;
+  --footer-text: #C9CDD2;
+  --grid-line: rgba(27,31,36,0.06);
+  --radius-card: 0px;
+  --radius-button: 2px;
+  --content-max: 1120px;
+  --page-gutter: 24px;
+  --section-pad: 72px;
+  --hero-pad-top: 88px;
+  --grid-size: 24px;
+  --rule-width: 1px;
+  --card-pad: 24px;
+  --card-gap: 10px;
+  --gap-cards: 20px;
+  --gap-principles: 32px;
+  --col-min-cards: 300px;
+  --col-min-principles: 220px;
+  --col-min-side: 300px;
+  --button-pad: 13px 22px;
+  --founder-pad: 16px;
+  --measure-h1: 13ch;
+  --measure-lede: 46ch;
+  --measure-body: 58ch;
+  --space-4: 4px;
+  --space-8: 8px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-48: 48px;
+  --space-72: 72px;
+  --space-88: 88px;
+  --font-sans: "IBM Plex Sans", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+}

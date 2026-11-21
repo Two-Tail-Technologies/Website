@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Conflict Forecasting | Two Tail Technologies</title>
+<meta name="description" content="Can news-event data improve forecasts of armed conflict deaths, especially in countries where fighting has not yet begun? A Two Tail Technologies project.">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Two Tail Technologies">
+<meta property="og:title" content="Conflict Forecasting | Two Tail Technologies">
+<meta property="og:description" content="Can news-event data improve forecasts of armed conflict deaths, especially in countries where fighting has not yet begun? A Two Tail Technologies project.">
+<meta property="og:image" content="https://two-tail-technologies.github.io/Website/assets/img/tt-social-og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Two Tail Technologies. Built for real decisions. Tested like it matters.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Conflict Forecasting | Two Tail Technologies">
+<meta name="twitter:description" content="Can news-event data improve forecasts of armed conflict deaths, especially in countries where fighting has not yet begun? A Two Tail Technologies project.">
+<meta name="twitter:image" content="https://two-tail-technologies.github.io/Website/assets/img/tt-social-og.png">
+<link rel="stylesheet" href="../assets/css/tokens.css">
+<link rel="stylesheet" href="../assets/css/components.css">
+<link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body class="tt-grid">
+<a class="tt-skip" href="#main">Skip to content</a>
+<header class="tt-header">
+  <div class="tt-header-inner">
+    <a class="tt-header-logo" href="../index.html"><img src="../assets/img/tt-lockup-horizontal-ink.svg" alt="Two Tail Technologies" width="189" height="32"></a>
+    <nav class="tt-nav" aria-label="Main"><a href="../projects.html">Projects</a><a href="../about.html">About</a><a href="../contact.html">Contact</a></nav>
+  </div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrap wrap-hero page-head">
+  <p class="back-link"><a href="../projects.html">Back to all projects</a></p>
+  <p class="tt-status tt-status-idea page-status"><span aria-hidden="true">○</span> Idea</p>
+  <h1>Conflict Forecasting</h1>
+  <p class="lede">Can news-event data improve forecasts of armed conflict deaths, especially in countries where fighting has not yet begun?</p>
+  <p class="tt-tags">python · forecasting · event data</p>
+</div>
+<section class="tt-band" aria-label="Project details">
+  <div class="wrap detail">
+    <h2>The question</h2>
+    <p>Do monthly country features built from the GDELT news-event database improve out-of-sample forecasts of state-based conflict deaths over the published VIEWS benchmark models, particularly for new outbreaks in countries with little recent violence? It is a prediction question and makes no claim about why conflicts start.</p>
+    <h2>Where it stands</h2>
+    <p>The research plan is drafted, and the data licenses have been reviewed: conflict data from the Uppsala Conflict Data Program and news-event data from GDELT. Nothing is built yet.</p>
+    <h2>How it will be tested</h2>
+    <p>The VIEWS benchmarks are reproduced first, alongside a simple regression on past conflict. The model is trained on conflict history alone, then on history plus news data; the difference between the two is the answer. Forecasts are scored with rolling evaluation that never shuffles time, using proper probabilistic scores.</p>
+    <p>The strongest test comes last: freeze the model, publish its forecasts and score them as new conflict data arrives.</p>
+  </div>
+</section>
+<div class="wrap">
+  <p class="back-link"><a href="../projects.html">Back to all projects</a></p>
+</div>
+</main>
+<footer class="tt-footer">
+  <div class="tt-footer-inner">
+    <p>© 2026 Two Tail Technologies</p>
+    <p><a href="https://github.com/Two-Tail-Technologies" aria-label="Two Tail Technologies on GitHub">GitHub</a></p>
+  </div>
+</footer>
+</body>
+</html>
