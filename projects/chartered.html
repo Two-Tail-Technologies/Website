@@ -4,19 +4,19 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Chartered | Two Tail Technologies</title>
-<meta name="description" content="Can a trained agent, limited to what a human player sees and does, keep a colony alive in games it has never played? A Two Tail Technologies project.">
+<meta name="description" content="Can a trained agent, limited to what a human player sees and does, keep a colony alive in games it has never played? A Two Tail Technologies project. Chartered 1.0.0 is out now for Windows, free.">
 <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Two Tail Technologies">
 <meta property="og:title" content="Chartered | Two Tail Technologies">
-<meta property="og:description" content="Can a trained agent, limited to what a human player sees and does, keep a colony alive in games it has never played? A Two Tail Technologies project.">
+<meta property="og:description" content="Can a trained agent, limited to what a human player sees and does, keep a colony alive in games it has never played? A Two Tail Technologies project. Chartered 1.0.0 is out now for Windows, free.">
 <meta property="og:image" content="https://two-tail-technologies.github.io/Website/assets/img/tt-social-og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Two Tail Technologies. Built for real decisions. Tested like it matters.">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Chartered | Two Tail Technologies">
-<meta name="twitter:description" content="Can a trained agent, limited to what a human player sees and does, keep a colony alive in games it has never played? A Two Tail Technologies project.">
+<meta name="twitter:description" content="Can a trained agent, limited to what a human player sees and does, keep a colony alive in games it has never played? A Two Tail Technologies project. Chartered 1.0.0 is out now for Windows, free.">
 <meta name="twitter:image" content="https://two-tail-technologies.github.io/Website/assets/img/tt-social-og.png">
 <link rel="stylesheet" href="../assets/css/tokens.css">
 <link rel="stylesheet" href="../assets/css/components.css">
@@ -33,19 +33,70 @@
 <main id="main" tabindex="-1">
 <div class="wrap wrap-hero page-head">
   <p class="back-link"><a href="../projects.html">Back to all projects</a></p>
-  <p class="tt-status tt-status-active page-status"><span aria-hidden="true">●</span> In progress</p>
+  <p class="tt-status tt-status-active page-status"><span aria-hidden="true">&#9679;</span> 1.0.0: out now, free</p>
   <h1>Chartered</h1>
-  <p class="page-meta">Repository: <span class="needs">[NEEDS: Chartered repository URL]</span></p>
+  <p class="page-meta">Download: <a href="https://github.com/Two-Tail-Technologies/Website/releases/tag/chartered-v1.0.0">GitHub Release chartered-v1.0.0</a></p>
   <p class="lede">Can a trained agent, limited to what a human player sees and does, keep a colony alive in games it has never played? Chartered is our own survival city-builder, inspired by Banished, designed so that people and the agent play exactly the same game.</p>
   <p class="tt-tags">python · godot 4 · reinforcement learning</p>
 </div>
 <section class="tt-band" aria-label="Project details">
-  <div class="wrap detail">
-    <h2>The question</h2>
+  <div class="wrap detail detail-release">
+    <h2 id="download">Download</h2>
+    <p>Chartered 1.0.0 is out now for Windows, free to play. It comes with Sheldon, a rule-based bot that can govern your colony, and you can train your own agents on the Agents screen. Our trained agents come in a later update.</p>
+    <p><a class="tt-btn tt-btn-primary" href="https://github.com/Two-Tail-Technologies/Website/releases/download/chartered-v1.0.0/Chartered-Setup-1.0.0.exe">Download Chartered 1.0.0</a></p>
+    <p>Chartered-Setup-1.0.0.exe, about 427 MB, version 1.0.0, published by Two Tail Technologies. The installer is not code-signed yet, so Windows may warn you before it runs: see <a href="#smartscreen">Getting past SmartScreen</a>.</p>
+    <p>SHA-256: <code>2a778345798ea7d79591c3e4306cb1423274048aa3b01beea160e233ac299cfd</code></p>
+    <p>To check that your download is complete and unchanged, open a Command Prompt in the folder you saved it to (in File Explorer, type <code>cmd</code> in that folder's address bar and press Enter), then run:</p>
+    <p><code>certutil -hashfile Chartered-Setup-1.0.0.exe SHA256</code></p>
+    <p>Compare the hash it prints with the SHA-256 above. If they don't match, delete the file and download it again.</p>
+    <h2 id="requirements">System requirements</h2>
+    <ul>
+      <li>Windows 10 or 11, 64-bit. Nothing else needs to be installed.</li>
+      <li>Memory: 8 GB; 16 GB recommended. The Monmouth County map needs the most: about 6 GB for the game and its simulation together at their peak.</li>
+      <li>Graphics: a DirectX 12 graphics card. On an older or slower card, choose Settings &gt; Graphics &gt; Low.</li>
+      <li>Disk: about 1.4 GB.</li>
+      <li>A real graphics card is needed: the game is not supported in virtual machines or Windows Sandbox.</li>
+    </ul>
+    <p>Tested on an Intel Core i9-9900K with 32 GB of memory, an NVIDIA GeForce RTX 4070, and Windows 10.</p>
+    <h2 id="smartscreen">Getting past SmartScreen</h2>
+    <p>The installer is not code-signed yet, so when you run it after downloading, Windows may show "Windows protected your PC". To install anyway:</p>
+    <ol>
+      <li>Click "More info".</li>
+      <li>Click "Run anyway".</li>
+    </ol>
+    <p>Code signing comes in update 1.1.</p>
+    <h2 id="privacy">Privacy</h2>
+    <p>Chartered collects nothing and sends nothing. There are no analytics, no accounts, and no network connections of its own. Saves, training runs, and logs stay on your own disk in <code>%LOCALAPPDATA%\Chartered</code>. "Report a problem" in Settings only makes a zip file for you to send yourself, if you choose to.</p>
+    <h2 id="license">License and mods</h2>
+    <p>Chartered is free to play under its end-user license, which the installer shows and installs as <code>EULA.txt</code>. The license allows you to make, use, and share mods. The open-source components the game uses are listed in <code>THIRD-PARTY-NOTICES.txt</code>.</p>
+    <h2 id="installing">Installing and updating</h2>
+    <p>The installer offers to install "only for me" (no administrator needed) or for all users, with Start menu and optional desktop shortcuts and an uninstaller.</p>
+    <p>To update, run a new installer over the old one. Your saves stay in <code>%LOCALAPPDATA%\Chartered</code> when the game is updated or uninstalled.</p>
+    <h2 id="known-issues">Known issues</h2>
+    <ul>
+      <li>Starting a new game can take a minute or more, and Monmouth County a few minutes. Each map is kept afterward, so the same map starts faster next time.</li>
+      <li>In Windows Sandbox and virtual machines the game can quit without a message while making a map.</li>
+    </ul>
+    <h2 id="whats-in">What's in 1.0.0</h2>
+    <ul>
+      <li>A colonial New England colony on a map of its own, or on Monmouth County, New Jersey, from real height data: towns, fields and orchards, pastures, trade, storms, floods, droughts and fire, and the Crown's taxes, in 3D.</li>
+      <li>Production chains from grain and fish to bread, cheese, pies, cider and wine, wool and linen to tailored clothes, coal and steel tools, glass, roof tiles, and furniture.</li>
+      <li>Sheldon, the bot that comes with the game, can govern the colony: hand it over with the crown on the top bar and take it back at any time.</li>
+      <li>Train your own agents on the Agents screen, watch them learn, and see whether they beat Sheldon.</li>
+      <li>Saves that load in seconds, autosaves each year, and Report a problem in Settings.</li>
+    </ul>
+    <h2 id="coming">What's missing, and what's coming</h2>
+    <ul>
+      <li><strong>1.0.1 (soon):</strong> the game keeps 4x and max speed from dropping below 30 frames a second (with a switch to turn it off); it tells you when an update is out and can install it in one click; an error screen instead of quitting silently; faster new maps; Sheldon plays better (firewood, coats, tools); interface fixes.</li>
+      <li><strong>1.0.2:</strong> Monmouth County polish (and its title clip back).</li>
+      <li><strong>1.1:</strong> Chartered on Steam (with learning on an NVIDIA graphics card), a code-signed installer, and automatic updates.</li>
+      <li><strong>1.2:</strong> the groundwork for mods and new content.</li>
+      <li><strong>1.3:</strong> the trained governors: Governor Steve and three more, each with its own aim, and a bot that keeps the colony steady while you are away.</li>
+      <li><strong>1.4 and on:</strong> more real maps (Jamestown and the James River, New York City, and more), mod support, and much more to build: more crops, orchard trees, and animals, and many more goods and production chains.</li>
+    </ul>
+    <h2 id="question">The question</h2>
     <p>Can an agent that plays with exactly the same commands and information as a human keep a colony alive, and meet efficiency targets, on random seeds and scenarios it has never seen?</p>
-    <h2>Where it stands</h2>
-    <p>Version 0 was built and tested on November 11, 2026. On 20 seeds it never trained on, the trained agent scored 1,235.4 with every colony surviving. The rule-based bot scored 1,067.4 on the same seeds.</p>
-    <p>Version 0 runs as a Windows program and has been checked on a clean machine. Version 1 is in active development. It replaces population counts with individual villagers, adding households, births and deaths, schooling, harsh winters and accidents. A Godot game window with real-time controls comes next, followed by a screen for watching the agent train.</p>
+    <p>1.0.0 ships with Sheldon, the rule-based bot. The trained agents that put this question to the test come in a later update: the trained governors are planned for 1.3.</p>
     <h2>How it's tested</h2>
     <p>The game runs as a simulation that needs no screen. The same seed and the same commands always produce the same game, so people, the agent and replays share one engine, and every result can be rerun and checked. A rule-based bot had to keep colonies alive on most seeds before any machine learning began, and the agent has to beat that bot. Scores come from many seeds the agent has never played, never from training rewards, so no single game decides the result. The agent sees only what a human player can see.</p>
   </div>

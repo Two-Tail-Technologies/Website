@@ -34,8 +34,9 @@ Any static file server works. From this folder:
 
 1. Copy an existing page in `projects/` and rename it (lowercase, hyphenated).
 2. Edit the title, status, summary and sections, plus the description tags in the page head.
-3. Add a card for it in `projects.html`. The card's `data-status` (`progress` or `idea`)
-   drives the filter. Status words are only In progress and Idea.
+3. Add a card for it in `projects.html`. The card's `data-status` (`released`, `progress` or
+   `idea`) drives the filter. Status words are only Released, In progress and Idea; a released
+   project's card and page name the version, for example "1.0.0: out now, free".
 4. To feature it on the home page, add the same card to the current work list in `index.html`,
    and update the project count in the "See all projects" link.
 
