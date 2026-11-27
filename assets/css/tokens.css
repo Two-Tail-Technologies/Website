@@ -1,4 +1,13 @@
-/* Two Tail Technologies — tokens, generated from tokens.json (D13, D25). */
+/* Two Tail Technologies: design tokens (colors, fonts, spacing). */
+
+/* IBM Plex, self-hosted (SIL Open Font License; see assets/fonts/ofl-license-*.txt). Latin subset. */
+@font-face { font-family: "IBM Plex Sans"; font-style: normal; font-weight: 400; font-display: swap; src: url("../fonts/ibm-plex-sans-latin-400-normal.woff2") format("woff2"); }
+@font-face { font-family: "IBM Plex Sans"; font-style: normal; font-weight: 600; font-display: swap; src: url("../fonts/ibm-plex-sans-latin-600-normal.woff2") format("woff2"); }
+@font-face { font-family: "IBM Plex Sans"; font-style: normal; font-weight: 700; font-display: swap; src: url("../fonts/ibm-plex-sans-latin-700-normal.woff2") format("woff2"); }
+@font-face { font-family: "IBM Plex Mono"; font-style: normal; font-weight: 400; font-display: swap; src: url("../fonts/ibm-plex-mono-latin-400-normal.woff2") format("woff2"); }
+@font-face { font-family: "IBM Plex Mono"; font-style: normal; font-weight: 500; font-display: swap; src: url("../fonts/ibm-plex-mono-latin-500-normal.woff2") format("woff2"); }
+@font-face { font-family: "IBM Plex Mono"; font-style: normal; font-weight: 600; font-display: swap; src: url("../fonts/ibm-plex-mono-latin-600-normal.woff2") format("woff2"); }
+
 :root {
   --paper: #F6F5EF;
   --sheet: #FFFFFF;
@@ -6,7 +15,7 @@
   --ink-soft: #3A4048;
   --muted: #5B616B;
   --rule: #D9D7CE;
-  --signal: #C2410C;
+  --signal: #A8380A;       /* darkened from #C2410C for contrast on small text */
   --footer-text: #C9CDD2;
   --grid-line: rgba(27,31,36,0.06);
   --radius-card: 0px;
@@ -22,7 +31,8 @@
   --gap-cards: 20px;
   --gap-principles: 32px;
   --col-min-cards: 300px;
-  --col-min-principles: 220px;
+  --col-min-principles: 180px;
+  --col-min-capabilities: 220px;
   --col-min-side: 300px;
   --button-pad: 13px 22px;
   --founder-pad: 16px;

@@ -4,19 +4,22 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Contact | Two Tail Technologies</title>
-<meta name="description" content="Contact Aaron and Mark Scott, co-founders of Two Tail Technologies, about a project, a collaboration or the work in general.">
+<meta name="description" content="Contact Aaron and Mark Scott of Two Tail Technologies about products, pilots, client work or collaboration.">
+<link rel="canonical" href="https://two-tail-technologies.github.io/Website/contact.html">
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/ibm-plex-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Two Tail Technologies">
 <meta property="og:title" content="Contact | Two Tail Technologies">
-<meta property="og:description" content="Contact Aaron and Mark Scott, co-founders of Two Tail Technologies, about a project, a collaboration or the work in general.">
+<meta property="og:description" content="Contact Aaron and Mark Scott of Two Tail Technologies about products, pilots, client work or collaboration.">
+<meta property="og:url" content="https://two-tail-technologies.github.io/Website/contact.html">
 <meta property="og:image" content="https://two-tail-technologies.github.io/Website/assets/img/tt-social-og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Two Tail Technologies. Built for real decisions. Tested like it matters.">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Contact | Two Tail Technologies">
-<meta name="twitter:description" content="Contact Aaron and Mark Scott, co-founders of Two Tail Technologies, about a project, a collaboration or the work in general.">
+<meta name="twitter:description" content="Contact Aaron and Mark Scott of Two Tail Technologies about products, pilots, client work or collaboration.">
 <meta name="twitter:image" content="https://two-tail-technologies.github.io/Website/assets/img/tt-social-og.png">
 <link rel="stylesheet" href="assets/css/tokens.css">
 <link rel="stylesheet" href="assets/css/components.css">
@@ -26,56 +29,77 @@
 <a class="tt-skip" href="#main">Skip to content</a>
 <header class="tt-header">
   <div class="tt-header-inner">
-    <a class="tt-header-logo" href="index.html"><img src="assets/img/tt-lockup-horizontal-ink.svg" alt="Two Tail Technologies" width="189" height="32"></a>
-    <nav class="tt-nav" aria-label="Main"><a href="projects.html">Projects</a><a href="about.html">About</a><a href="contact.html" aria-current="page">Contact</a></nav>
+    <a class="tt-header-logo" href="index.html"><picture><source media="(max-width: 480px)" srcset="assets/img/tt-symbol-ink.svg"><img src="assets/img/tt-lockup-horizontal-ink.svg" alt="Two Tail Technologies" width="189" height="32"></picture></a>
+    <nav class="tt-nav" aria-label="Main"><a href="projects.html#products">Products</a><a href="projects.html#research">Research</a><a href="about.html">About</a><a href="contact.html" aria-current="page">Contact</a></nav>
   </div>
 </header>
 <main id="main" tabindex="-1">
 <section class="wrap wrap-hero" aria-labelledby="contact-title">
   <h1 id="contact-title">Get in touch</h1>
-  <p class="lede">Questions about a project, or about the work in general? Send us a message. It goes to both of us unless you pick one.</p>
-  <form class="contact-form" id="contact-form" novalidate>
+  <p class="lede">Interested in a product, a pilot or a collaboration? Reach either of us directly. We usually reply within two business days.</p>
+  <div class="notice" id="contact-notice">
+    <p>Our contact form is being set up. In the meantime, reach us on LinkedIn:</p>
+    <ul>
+      <li><a href="https://www.linkedin.com/in/aaron-scott-63b716305">Aaron Scott on LinkedIn</a></li>
+      <li><a href="https://www.linkedin.com/in/mark-scott-bb6ab4329">Mark Scott on LinkedIn</a></li>
+    </ul>
+  </div>
+  <form class="contact-form" id="contact-form" novalidate hidden>
     <fieldset class="field recipients">
-      <legend>Send to</legend>
-      <label class="check"><input type="checkbox" name="to" value="aaron" checked> Aaron Scott</label>
-      <label class="check"><input type="checkbox" name="to" value="mark" checked> Mark Scott</label>
+      <legend>Send to <span class="required">(required)</span></legend>
+      <label class="check"><input type="checkbox" name="to" value="aaron" checked aria-describedby="to-error"> Aaron Scott</label>
+      <label class="check"><input type="checkbox" name="to" value="mark" checked aria-describedby="to-error"> Mark Scott</label>
       <p class="field-error" id="to-error" hidden>Pick at least one of us.</p>
     </fieldset>
     <div class="field">
-      <label for="cf-name">Your name</label>
-      <input id="cf-name" name="name" type="text" autocomplete="name" required>
+      <label for="cf-topic">What is this about?</label>
+      <select id="cf-topic" name="topic">
+        <option value="">Choose a topic (optional)</option>
+        <option>Product inquiry</option>
+        <option>Pilot or collaboration</option>
+        <option>Chartered support</option>
+        <option>Something else</option>
+      </select>
     </div>
     <div class="field">
-      <label for="cf-email">Your email</label>
-      <input id="cf-email" name="email" type="email" autocomplete="email" required aria-describedby="cf-email-hint">
+      <label for="cf-name">Your name <span class="required">(required)</span></label>
+      <input id="cf-name" name="name" type="text" autocomplete="name" required aria-describedby="cf-name-error">
+      <p class="field-error" id="cf-name-error" hidden>Please enter your name.</p>
+    </div>
+    <div class="field">
+      <label for="cf-email">Your email <span class="required">(required)</span></label>
+      <input id="cf-email" name="email" type="email" autocomplete="email" required aria-describedby="cf-email-hint cf-email-error">
       <p class="field-hint" id="cf-email-hint">So we can write back. We won't share it.</p>
+      <p class="field-error" id="cf-email-error" hidden>Please enter a valid email address.</p>
     </div>
     <div class="field">
-      <label for="cf-message">Message</label>
-      <textarea id="cf-message" name="message" rows="7" required></textarea>
+      <label for="cf-message">Message <span class="required">(required)</span></label>
+      <textarea id="cf-message" name="message" rows="7" required aria-describedby="cf-message-error"></textarea>
+      <p class="field-error" id="cf-message-error" hidden>Please enter a message.</p>
     </div>
     <input class="botcheck" type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true">
     <button type="submit" class="tt-btn tt-btn-primary">Send message</button>
     <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
   </form>
-  <noscript><p class="form-status">The contact form needs JavaScript. You can also reach us on LinkedIn below.</p></noscript>
+  <p class="field-hint">How we handle messages: see our <a href="privacy.html">privacy page</a>.</p>
+  <noscript><p class="form-status">You can reach us on LinkedIn using the links above or below.</p></noscript>
 </section>
 <section class="tt-band" aria-labelledby="elsewhere-title">
   <div class="wrap">
-  <h2 id="elsewhere-title" class="about-h2">Elsewhere</h2>
-  <div class="contact-grid">
-    <article class="tt-founder contact-founder">
+  <h2 id="elsewhere-title" class="section-h2">Elsewhere</h2>
+  <div class="founder-grid">
+    <article class="founder-card">
       <h3><a href="about.html#aaron-scott">Aaron Scott</a></h3>
-      <p class="tt-founder-line">co-founder · business + politics</p>
+      <p class="tt-founder-line">Co-founder / client relations and operations</p>
       <ul class="contact-list">
         <li><span class="label">LinkedIn:</span> <a href="https://www.linkedin.com/in/aaron-scott-63b716305">linkedin.com/in/aaron-scott-63b716305</a></li>
         <li><span class="label">GitHub:</span> <a href="https://github.com/scottvaaron-ctrl">github.com/scottvaaron-ctrl</a></li>
         <li><span class="label">Website:</span> <a href="https://scottvaaron-ctrl.github.io/Website/">scottvaaron-ctrl.github.io/Website</a></li>
       </ul>
     </article>
-    <article class="tt-founder contact-founder">
+    <article class="founder-card">
       <h3><a href="about.html#mark-scott">Mark Scott</a></h3>
-      <p class="tt-founder-line">co-founder · academia + machine learning</p>
+      <p class="tt-founder-line">Co-founder / development and data</p>
       <ul class="contact-list">
         <li><span class="label">LinkedIn:</span> <a href="https://www.linkedin.com/in/mark-scott-bb6ab4329">linkedin.com/in/mark-scott-bb6ab4329</a></li>
         <li><span class="label">GitHub:</span> <a href="https://github.com/MarkGScott960">github.com/MarkGScott960</a></li>
@@ -88,8 +112,9 @@
 </main>
 <footer class="tt-footer">
   <div class="tt-footer-inner">
-    <p>© 2026 Two Tail Technologies</p>
-    <p><a href="https://github.com/Two-Tail-Technologies" aria-label="Two Tail Technologies on GitHub">GitHub</a></p>
+    <nav class="tt-footer-nav" aria-label="Footer"><a href="projects.html#products">Products</a><a href="projects.html#research">Research</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="privacy.html">Privacy</a></nav>
+    <p class="tt-footer-links"><a href="https://www.linkedin.com/in/aaron-scott-63b716305">Aaron on LinkedIn</a><a href="https://www.linkedin.com/in/mark-scott-bb6ab4329">Mark on LinkedIn</a><a href="https://github.com/Two-Tail-Technologies">GitHub</a></p>
+    <p>&copy; 2026 Two Tail Technologies</p>
   </div>
 </footer>
 <script src="assets/js/contact.js"></script>
